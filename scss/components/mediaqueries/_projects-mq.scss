@@ -1,0 +1,31 @@
+@media only screen and (min-width: 2400px) {
+  .project__item {
+    max-height: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .project__item {
+    min-height: 30rem;
+
+    &:nth-child(odd),
+    &:nth-child(even) {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .projects .animate:nth-child(even) {
+    transition-delay: $link-transition-timing;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project__item {
+    &:nth-child(odd),
+    &:nth-child(even) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "keith-website",
+  "version": "2.0.0",
+  "description": "package for my website",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp test",
+    "start": "php -S 0.0.0.0:8000",
+    "build": "rm -rf build && gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keefyhub/keith-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keefyhub/keith-website/issues"
+  },
+  "author": "Keith Light",
+  "license": "WTFPL",
+  "homepage": "https://github.com/keefyhub/keith-website/#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^1.4.2",
+    "sass-module-importer": "^1.4.0"
+  },
+  "dependencies": {
+    "reset-css": "^2.2.1"
+  }
+}

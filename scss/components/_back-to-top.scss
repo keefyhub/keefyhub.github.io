@@ -1,0 +1,26 @@
+.back-to-top {
+  background: $back-to-top-background-color;
+  bottom: 3rem;
+  color: $back-to-top-color;
+  cursor: pointer;
+  display: block;
+  height: 4rem;
+  opacity: 0;
+  position: fixed;
+  right: 2rem;
+  transform: translateY(0);
+  transition: opacity $link-transition-timing,
+              transform $link-transition-timing;
+  width: 4rem;
+  z-index: 20;
+
+  > .fa {
+    @include absolute-center(absolute);
+  }
+
+
+  &--active {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}

@@ -1,0 +1,92 @@
+@for $i from 1 through length($colors) {
+  .project__item:nth-child(#{$i})::after {
+    background-color: nth($colors, $i);
+    opacity: .9;
+  }
+}
+
+.projects {
+  display: flex;
+}
+
+.project__item {
+  @include background-cover;
+  cursor: pointer;
+  font-weight: 700;
+  height: 50vh;
+  max-height: 60rem;
+  min-height: 40rem;
+  padding: 4rem;
+  position: relative;
+  text-decoration: none;
+  width: 60%;
+
+  &::after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: opacity $link-transition-timing;
+    width: 100%;
+  }
+
+  &:focus::after,
+  &:hover::after {
+    opacity: .6;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+
+  &:nth-child(4n-1),
+  &:nth-child(4n-2) {
+    width: 40%;
+  }
+
+  &--blue-tree {
+    background-image: url('./build/images/blue-tree-recruits.jpg');
+    background-position: center top;
+  }
+
+  &--dock-menu {
+    background-image: url('./build/images/dock-menu.jpg');
+  }
+
+  &--hts-rds {
+    background-image: url('./build/images/hts-rds.jpg');
+    background-position: center top;
+  }
+
+  &--lornabateman-embroidery {
+    background-image: url('./build/images/lornabateman-embroidery.jpg');
+    background-position: center top;
+  }
+
+  &--kosnic {
+    background-image: url('./build/images/kosnic.jpg');
+  }
+
+  &--nalu-creative {
+    background-image: url('./build/images/nalu-creative.jpg');
+  }
+
+  &--responsive-menu {
+    background-image: url('./build/images/responsive-menu.jpg');
+  }
+
+  &--weather-app {
+    background-image: url('./build/images/weather-app.jpg');
+  }
+
+  &-content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: calc(100% - 8rem);
+    z-index: 10;
+  }
+}

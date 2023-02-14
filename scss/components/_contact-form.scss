@@ -1,0 +1,73 @@
+input[type="submit"],
+input[type="reset"] {
+  background-color: inherit;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.contact-form {
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+
+  input:not([type="submit"]):not([type="reset"]),
+  textarea {
+    @include font-size(1.8);
+    background-color: $input-background-color;
+    border: 1px solid transparent;
+    color: $input-color;
+    padding: 2rem;
+    transition: border-color $link-transition-timing;
+    width: 100%;
+
+    &:focus {
+      border-color: $input-border-focus-color;
+    }
+  }
+
+  input:not([type="submit"]):not([type="reset"]) {
+    height: 6rem;
+  }
+
+  textarea {
+    height: 20rem;
+    resize: vertical;
+  }
+
+  &__field {
+    margin-bottom: 2rem;
+  }
+
+  .col-6 {
+    &:nth-child(odd) {
+      padding-right: 2rem;
+    }
+
+    &:nth-child(even) {
+      padding-left: 2rem;
+    }
+  }
+
+  .error-message {
+    border: 1px solid $input-error-color;
+    margin-bottom: 2rem;
+    opacity: 0;
+    padding: 2rem;
+    transition: opacity $link-transition-timing;
+    width: 100%;
+
+    &::before {
+      content: '\f12a';
+      font-family: 'fontawesome';
+      margin-right: 1rem;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}
