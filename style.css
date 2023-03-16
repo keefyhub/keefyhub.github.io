@@ -692,6 +692,9 @@ html:not(.iOS) .hero-banner {
 .project__item--v4-wood-flooring {
     background-image: url("./build/images/v4-wood-flooring.jpg");
 }
+.project__item--camps-international {
+    background-image: url("./build/images/camps-international.jpg");
+}
 .project__item-content {
     left: 50%;
     position: absolute;
