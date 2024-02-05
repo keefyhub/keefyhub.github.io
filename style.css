@@ -251,7 +251,9 @@ html.wf-loading {
 }
 .animate {
     transform: translateZ(0);
-    transition: opacity 0.75s, transform 0.75s;
+    transition:
+        opacity 0.75s,
+        transform 0.75s;
 }
 .fadeIn {
     opacity: 0;
@@ -695,6 +697,9 @@ html:not(.iOS) .hero-banner {
 .project__item--camps-international {
     background-image: url("./build/images/camps-international.jpg");
 }
+.project__item--careline-sl {
+    background-image: url("./build/images/careline-sl.jpg");
+}
 .project__item-content {
     left: 50%;
     position: absolute;
@@ -900,7 +905,9 @@ input[type="reset"] {
     position: absolute;
     top: 50%;
     color: #363a56;
-    transition: color 0.3s, transform 0.3s;
+    transition:
+        color 0.3s,
+        transform 0.3s;
     will-change: color, transform;
 }
 .social-icons__codepen::after {
@@ -932,7 +939,9 @@ input[type="reset"] {
     position: fixed;
     right: 2rem;
     transform: translateY(0);
-    transition: opacity 0.3s, transform 0.3s;
+    transition:
+        opacity 0.3s,
+        transform 0.3s;
     width: 4rem;
     z-index: 20;
 }
@@ -953,7 +962,9 @@ input[type="reset"] {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    transition: background-color 0.3s, color 0.3s;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
 }
 .btn--light {
     border-color: #fff;
