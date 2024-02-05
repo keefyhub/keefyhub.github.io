@@ -697,8 +697,8 @@ html:not(.iOS) .hero-banner {
 .project__item--camps-international {
     background-image: url("./build/images/camps-international.jpg");
 }
-.project__item--careline-sl {
-    background-image: url("./build/images/careline-sl.jpg");
+.project__item--carelinesl {
+    background-image: url("./build/images/carelinesl.jpg");
 }
 .project__item-content {
     left: 50%;
@@ -806,7 +806,10 @@ html:not(.iOS) .hero-banner {
     background: #303f9f;
 }
 .skillz__percent--react {
-    background: #42a5f5;
+    background: #64d4f1;
+}
+.skillz__percent--typescript {
+    background: #3476be;
 }
 input[type="submit"],
 input[type="reset"] {
